@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚌 Bus Booking</h1>
+
+<div class="container">
+
+    <h2>Search Bus</h2>
+    <input type="text" id="from" placeholder="From">
+    <input type="text" id="to" placeholder="To">
+    <button onclick="searchBus()">Search</button>
+
+    <div id="busList"></div>
+
+    <h2>Select Seats</h2>
+    <div id="seats"></div>
+
+    <button onclick="bookTicket()">Book Ticket</button>
+
+    <h2>Booking History</h2>
+    <ul id="history"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
