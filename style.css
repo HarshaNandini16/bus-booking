@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#seats {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background: green;
+    color: white;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.selected {
+    background: orange;
+}
+
+.booked {
+    background: red;
+    pointer-events: none;
+}
