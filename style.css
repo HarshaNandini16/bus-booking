@@ -1,45 +1,59 @@
 body {
     font-family: Arial;
-    background: #f4f4f4;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    background: #d84e55;
+    color: white;
+    padding: 15px;
     text-align: center;
 }
 
-.container {
+/* Search */
+.search {
     background: white;
     padding: 20px;
-    margin: auto;
-    width: 80%;
-    border-radius: 10px;
+    text-align: center;
 }
 
-input {
+.search input {
     padding: 10px;
     margin: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    background: blue;
+.search button {
+    background: #d84e55;
     color: white;
+    padding: 10px;
     border: none;
-    cursor: pointer;
 }
 
-#seats {
+/* Bus card */
+.bus-card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Bus Layout */
+#busLayout {
     display: grid;
-    grid-template-columns: repeat(5, 50px);
+    grid-template-columns: repeat(4, 60px);
     gap: 10px;
     justify-content: center;
     margin: 20px;
 }
 
 .seat {
-    width: 50px;
-    height: 50px;
-    background: green;
-    color: white;
-    line-height: 50px;
+    background: #ccc;
+    padding: 15px;
+    text-align: center;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .selected {
@@ -48,5 +62,30 @@ button {
 
 .booked {
     background: red;
-    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Button */
+.book-btn {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Ticket */
+#ticket {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* History */
+#history {
+    background: white;
+    margin: 20px;
+    padding: 15px;
 }
